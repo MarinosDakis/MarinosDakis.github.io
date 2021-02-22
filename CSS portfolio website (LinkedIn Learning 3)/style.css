@@ -1,0 +1,200 @@
+/* Adapted from: https://files3.lynda.com/secure/courses/5038219/exercises/Ex_Files_CSS_EssT.zip?pQ9z70mL994B_qCd32CTHUh2bI0bYUjeIU2J0GITN8FJGd0SmEJkZSRFRAJ8ZdWAUut7ahWJGy6EsTPcmY6zQSR71a13uwGL4kp3ngWMmTXfNgao-fM1NYhAnePuUyHxwfTqXFi2X46k9uSsDdANpHynAjOR */
+
+
+/* Global styles
+------------------------------------*/
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    color: #343434;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+img {
+    width: 300px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffda00;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 45px;
+}
+
+h1, h2 {
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+    margin: 0;
+}
+
+.content-wrap {
+    max-width: 800px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+h3 {
+    margin-bottom: 0;
+}
+
+.item-details h3 + p {
+    font-style: italic;
+}
+
+.item-details h3 ~ p {
+    margin: 0;
+}
+
+.divider > section {
+    border-bottom: 1px dashed #343434;
+    padding: 25px 0;
+}
+.divider > section:last-of-type {
+    border-bottom: none;
+}
+
+
+/* Profile
+------------------------------------*/
+header {
+    background: #5da5cf;
+    color: white;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+
+/* Projects / Education
+------------------------------------*/
+.projects, .education {
+    background: #F7FFF7;
+    border: 2px double black;
+    border-right-style: none;
+    border-left-style: none;
+}
+
+.projects a {
+    color: #ff1947;
+    font-weight: bold;
+}
+
+.projects a:hover {
+    text-decoration: underline;
+}
+
+.project-item {
+    overflow: hidden;
+}
+
+.project-item h3 {
+    margin-top: 0;
+}
+
+/* Education
+------------------------------------*/
+.education {
+    background-image: url("placeholder images/qc.jpg");
+    background-size: cover;
+    padding-bottom: 100px;
+}
+.education p {
+    width: 60%;
+}
+
+.container-education {
+    background: #F7FFF7;
+    border: 2px double black;
+    /* took ideas from: https://stackoverflow.com/questions/34729756/how-to-remove-extra-space-on-right-side-of-an-inline-childs-container */
+    display: inline-block;
+    font-size: 30px;
+    padding: 15px;
+
+}
+
+
+/* Work Experience
+------------------------------------*/
+.work-experience {
+    background: #5da5cf;
+    color: white;
+}
+
+
+/* Contact Info
+------------------------------------*/
+footer {
+    background: #343434;
+    color: #F7FFF7;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+}
+.contact-list a {
+    padding: 15px;
+    display: inline-block;
+}
+
+
+/* Responsive
+------------------------------------*/
+@media screen and (min-width:750px){
+    header, footer {
+        text-align: center;
+    }
+    .project-item img {
+        float: left;
+        margin-right: 20px;
+    }
+
+    .job-item {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 20px;
+    }
+    .contact-list {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:749px){
+    h1 {
+        font-size: 75px;
+        line-height: 0.9;
+        margin-bottom: 20px;
+    }
+    h2 {
+        line-height: 1;
+    }
+    .contact-list a {
+        padding: 5px;
+    }
+}
