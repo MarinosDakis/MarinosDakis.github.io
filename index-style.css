@@ -1,0 +1,58 @@
+/* Adapted from: https://files3.lynda.com/secure/courses/5038219/exercises/Ex_Files_CSS_EssT.zip?pQ9z70mL994B_qCd32CTHUh2bI0bYUjeIU2J0GITN8FJGd0SmEJkZSRFRAJ8ZdWAUut7ahWJGy6EsTPcmY6zQSR71a13uwGL4kp3ngWMmTXfNgao-fM1NYhAnePuUyHxwfTqXFi2X46k9uSsDdANpHynAjOR */
+
+/* Global
+------------------------------------*/
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Body
+------------------------------------*/
+body {
+    background-color: #ecb4e6;
+}
+
+header {
+    text-align: center;
+    font-size: xx-large;
+    color: #000000;
+    font-family: Arial;
+}
+
+a {
+    justify-content: center;
+    color: #000000;
+    text-decoration: none;
+    font-family: "Times New Roman";
+    font-weight: bold;
+}
+
+.hyperlinks-container {
+    background: #ffffff;
+    font-size: 30px;
+    justify-content: center;
+    border: black 2px solid;
+    padding: 5px;
+    display: flex;
+}
+
+/* Responsive
+------------------------------------*/
+@media screen and (min-width:500px){
+    header {
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width:499px){
+    h1 {
+        font-size: 75px;
+        line-height: 0.9;
+        margin-bottom: 20px;
+    }
+
+}
