@@ -7,7 +7,6 @@ const routeHandler = require('./routes');
 const UserService = require("./services/UserService");
 const BasketService = require("./services/BasketService");
 
-
 module.exports = (config) => {
   const app = express();
 

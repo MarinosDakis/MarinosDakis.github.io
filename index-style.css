@@ -15,28 +15,35 @@ body {
     background-color: #ecb4e6;
 }
 
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
 header {
     text-align: center;
     font-size: xx-large;
-    color: #000000;
-    font-family: Arial;
+    color: #000;
+    font-family: Arial, sans-serif;
 }
 
 a {
     justify-content: center;
-    color: #000000;
+    color: #000;
     text-decoration: none;
-    font-family: "Times New Roman";
+    font-family: "Times New Roman", sans-serif;
     font-weight: bold;
 }
 
 .hyperlinks-container {
-    background: #ffffff;
+    background: #e2bafb;
     font-size: 30px;
-    justify-content: center;
     border: black 2px solid;
-    padding: 5px;
     display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 600px;
+    margin: auto auto 10px;
 }
 
 /* Responsive
@@ -50,9 +57,9 @@ a {
 
 @media screen and (max-width:499px){
     h1 {
-        font-size: 75px;
+        font-size: 40px;
         line-height: 0.9;
-        margin-bottom: 20px;
+        margin: auto auto 10px;
     }
 
 }
