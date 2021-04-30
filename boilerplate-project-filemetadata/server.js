@@ -1,3 +1,10 @@
+/*
+Adapted from:
+https://www.npmjs.com/package/multer
+https://scotch.io/tutorials/express-file-uploads-with-multer
+https://mongoosejs.com/docs/tutorials/findoneandupdate.html
+https://www.youtube.com/watch?v=rqV7lRPPSL4&ab_channel=GaneshH
+*/
 var express = require('express');
 var cors = require('cors');
 require('dotenv').config()

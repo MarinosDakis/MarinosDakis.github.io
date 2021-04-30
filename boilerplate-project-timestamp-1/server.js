@@ -1,3 +1,13 @@
+/*
+Adapted from:
+https://forum.freecodecamp.org/t/freecodecamp-challenge-guide-timestamp-microservice/301508
+https://forum.freecodecamp.org/t/failed-test-your-project-can-handle-dates-that-can-be-successfully-parsed-by-new-date-date-string/447575
+https://developer.mozilla.org/en-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
+https://coderrocketfuel.com/article/convert-a-unix-timestamp-to-a-date-in-vanilla-javascript
+https://www.youtube.com/watch?v=Vcxszof5lnw&ab_channel=GaneshH
+ */
+
 // server.js
 // where your node app starts
 

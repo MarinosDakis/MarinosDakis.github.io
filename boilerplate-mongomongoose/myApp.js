@@ -1,3 +1,15 @@
+/*Adapted from:
+https://docs.replit.com/repls/secrets-environment-variables
+https://forum.freecodecamp.org/t/freecodecamp-challenge-guide-create-a-model/301535
+https://mongoosejs.com/docs/guide.html
+https://forum.freecodecamp.org/t/freecodecamp-challenge-guide-create-many-records-with-model-create/301537
+https://forum.freecodecamp.org/t/freecodecamp-challenge-guide-use-model-find-to-search-your-database/301543
+https://www.geeksforgeeks.org/mongoose-findbyid-function/
+https://forum.freecodecamp.org/t/freecodecamp-challenge-guide-perform-classic-updates-by-running-find-edit-then-save/301541
+https://forum.freecodecamp.org/t/freecodecamp-challenge-guide-perform-new-updates-on-a-document-using-model-findoneandupdate/301542
+https://forum.freecodecamp.org/t/freecodecamp-challenge-guide-chain-search-query-helpers-to-narrow-search-results/301533
+*/
+
 require('dotenv').config();
 let mongodb = require('mongodb');
 let mongoose = require('mongoose');

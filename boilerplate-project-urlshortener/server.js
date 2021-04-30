@@ -1,3 +1,8 @@
+/*
+Adapted from:
+https://www.youtube.com/watch?v=dvCIN_pav8o&ab_channel=GaneshH
+https://stackoverflow.com/questions/3809401/what-is-a-good-regular-expression-to-match-a-url
+*/
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
