@@ -56,7 +56,7 @@ a {
     display: flex;
     justify-content: center;
     align-self: center;
-    width: 600px;
+    width: auto;
     margin: auto auto 10px;
 }
 
@@ -70,10 +70,21 @@ a {
 }
 
 @media screen and (max-width:499px){
+
     h1 {
         font-size: 40px;
         line-height: 0.9;
         margin: auto auto 10px;
     }
 
+    p {
+        font-size: 15px;
+    }
+
+    .logo {
+        margin: 10px auto 10px;
+        padding-bottom: 450px;
+        width: 200px;
+        height: 230px;
+    }
 }
