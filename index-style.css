@@ -67,17 +67,6 @@ a {
         text-align: center;
     }
 
-    a {
-        font-size: 25px;
-    }
-
-    .logo {
-        margin: 10px auto 10px;
-        padding-bottom: 450px;
-        width: 200px;
-        height: 230px;
-    }
-
     .title {
         font-size: 30px;
     }
@@ -89,5 +78,9 @@ a {
         font-size: 25px;
         line-height: 0.9;
         margin: auto auto 10px;
+    }
+
+    a {
+        font-size: 20px;
     }
 }
