@@ -62,23 +62,13 @@ a {
 
 /* Responsive
 ------------------------------------*/
-@media screen and (min-width:500px){
+@media screen and (min-width:500px) {
     header {
         text-align: center;
     }
 
-}
-
-@media screen and (max-width:499px){
-
-    h1 {
-        font-size: 40px;
-        line-height: 0.9;
-        margin: auto auto 10px;
-    }
-
-    p {
-        font-size: 15px;
+    a {
+        font-size: 25px;
     }
 
     .logo {
@@ -86,5 +76,18 @@ a {
         padding-bottom: 450px;
         width: 200px;
         height: 230px;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:499px){
+
+    h1 {
+        font-size: 25px;
+        line-height: 0.9;
+        margin: auto auto 10px;
     }
 }
