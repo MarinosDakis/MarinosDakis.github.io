@@ -6,20 +6,18 @@ var http = require('http').Server(app);
 var io = require('socket.io')(http);
 var mongoose = require('mongoose');
 
-
 app.use(express.static(__dirname));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
 mongoose.Promise = Promise;
 
-var dbURL = 'mongodb+srv://user:user@cluster0.gzfa4.mongodb.net/Cluster0?retryWrites=true&w=majority';
+var dbURL = 'mongodb+srv://marinos:open123@cluster0.7pdeb.mongodb.net/Cluster0?retryWrites=true&w=majority';
 
 var Message = mongoose.model('Message', {
     name: String,
     message: String
 })
-
 
 app.get('/messages', (req, res) =>{
     Message.find({}, (err, messages) =>
@@ -30,28 +28,28 @@ app.get('/messages', (req, res) =>{
 
 app.post('/messages', async (req, res) => {
 
-try {
+    try {
 
-    var message = new Message(req.body)
-    var savedMessage = await message.save();
-    console.log('saved');
-    var censored = await Message.findOne({message: 'badword'})
-    if(censored) {
-        await Message.remove({_id: censored.id});
-    }
-    else {
-        io.emit('message', req.body);
-    }
+        var message = new Message(req.body)
+        var savedMessage = await message.save();
+        console.log('saved');
+        var censored = await Message.findOne({message: 'badword'})
+        if(censored) {
+            await Message.remove({_id: censored.id});
+        }
+        else {
+            io.emit('message', req.body);
+        }
 
-    res.sendStatus(200);
+        res.sendStatus(200);
 
-} catch (error){
+    } catch (error){
         res.sendStatus(500)
         return console.error(error)
-} finally {
-    //logger.log("message post called")
+    } finally {
+        //logger.log("message post called")
 
-}
+    }
 
 })
 
@@ -59,7 +57,7 @@ io.on('connection', (socket) => {
     console.log('a user connected')
 })
 
-mongoose.connect(dbURL, { useUnifiedTopology: true }, (err) => {
+mongoose.connect(dbURL, { useUnifiedTopology: true, useNewUrlParser: true }, (err) => {
     console.log("mongo db connection", err);
 })
 
