@@ -1,3 +1,5 @@
+Notes related to this assignment: https://docs.google.com/document/d/1Kgo2Z-x58vlVEcjMsmpWndxaRXewkWOhW71PKs8vagA/edit?usp=sharing
+___
 # Databases for Node.js Developers
 This is the repository for the LinkedIn Learning course Databases for Node.js Developers. The full course is available from [LinkedIn Learning][lil-course-url].
 
